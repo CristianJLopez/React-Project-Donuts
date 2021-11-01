@@ -21,6 +21,7 @@ function App() {
   
   const encendido = () => {
     setContar(contar+1);
+    
   }
 
   const [contar1, setContar1] = useState(0)
@@ -57,79 +58,12 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Los mejores donuts de usme han llegado!
-        </p>
-       </header>
-      <div>
-        <CardGroup>
-        <Card style={{ width: '25.5rem' }} border="primary" bg="info">
-          <Card.Img variant="top" src={logo} />
-          <Card.Body> 
-          <Card.Title>Simpson Donut</Card.Title>
-          <Card.Text>
-            Las mas deliciosas donas acompanadas de tu Topping Favorito.
-          </Card.Text>
-        <Button variant="success" onClick={encendido}>Quiero Una</Button>
-        <h4>Clicks:{contar}</h4>
-      </Card.Body>
-      </Card>
-      
-      <Card style={{ width: '25.5rem' }} border="primary" bg="info">
-          <Card.Img variant="top" src={Churroim} />
-          <Card.Body> 
-          <Card.Title>Simpson Donut</Card.Title>
-          <Card.Text>
-            Las mas deliciosas donas acompanadas de tu Topping Favorito.
-          </Card.Text>
-        <Button variant="success" onClick={encendido1}>Quiero Una</Button>
-        <h4>Clicks:{contar1}</h4>
-      </Card.Body>
-      </Card>
-      
-      <Card style={{ width: '25.5rem' }} border="primary" bg="info">
-          <Card.Img variant="top" src={Churroim2} />
-          <Card.Body> 
-          <Card.Title>Simpson Donut</Card.Title>
-          <Card.Text>
-            Las mas deliciosas donas acompanadas de tu Topping Favorito.
-          </Card.Text>
-        <Button variant="success" onClick={encendido2}>Quiero Una</Button>
-        <h4>Clicks:{contar2}</h4>
-      </Card.Body>
-      </Card>
-      
-      <Card style={{ width: '25.5rem' }} border="primary" bg="info">
-          <Card.Img variant="top" src={logo} />
-          <Card.Body> 
-          <Card.Title>Simpson Donut</Card.Title>
-          <Card.Text>
-            Las mas deliciosas donas acompanadas de tu Topping Favorito.
-          </Card.Text>
-        <Button variant="success" onClick={encendido3}>Quiero Una</Button>
-        <h4>Clicks:{contar3}</h4>
-      </Card.Body>
-      </Card>
-      
-      </CardGroup>
-      <a
-          className="App-link"
-          href="https://wa.me/message/6ATWXQEFE4ILI1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hacer pedido
-        </a>
-      </div>
-      
       <div>
       <Router>
         <div>
-        <Link to="./"><Button>Home</Button></Link>
-         <Link to="/contacto"><Button>Contacto</Button></Link> 
-          <Link to="/quien-Soy"><Button>Quien Soy</Button></Link> 
+        <Link to="./"><Button variant="danger" margin="50px">Home</Button></Link>
+         <Link to="/contacto"><Button variant="danger">Contactanos</Button></Link> 
+          <Link to="/quien-Soy"><Button  variant="danger">Quienes Somos</Button></Link> 
         </div>
 
       <Switch>
@@ -142,6 +76,76 @@ function App() {
       </Switch>
       </Router>
       </div>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Tus postres favoritos en minutos
+        </p>
+        <hr/>
+       </header>
+      <div>
+        <CardGroup>
+        <Card style={{ width: '25.5rem' }} border="danger" bg="ligth">
+          <Card.Img variant="top" src={logo} />
+          <Card.Body> 
+          <Card.Title>Donut de fresa</Card.Title>
+          <Card.Text>
+            Las mas deliciosas donuts con relleno natural de fresa
+          </Card.Text>
+        <Button variant="danger" onClick={encendido}>Agregar</Button>
+        <h4>Donut fresa: {contar}</h4>
+        <h5>Precio: {contar*3000}</h5>
+      </Card.Body>
+      </Card>
+      
+      <Card style={{ width: '25.5rem' }} border="danger" bg="ligth">
+          <Card.Img variant="top" src={Churroim} />
+          <Card.Body> 
+          <Card.Title>Churros de arequipe</Card.Title>
+          <Card.Text>
+            6 unidades de churritos azucarados con arequipe casero
+          </Card.Text>
+        <Button variant="danger" onClick={encendido1}>Agregar</Button>
+        <h4>Churros arequipe: {contar1}</h4>
+      </Card.Body>
+      </Card>
+      
+      <Card style={{ width: '25.5rem' }} border="danger" bg="ligth">
+          <Card.Img variant="top" src={Churroim2} />
+          <Card.Body> 
+          <Card.Title>Cupcake chocofresa</Card.Title>
+          <Card.Text>
+            Cupcake de la abuela rellenito de chocolate y bañado en crema de fresa
+          </Card.Text>
+        <Button variant="danger" onClick={encendido2}>Quiero Una</Button>
+        <h4>Cupcake chocofresa: {contar2}</h4>
+      </Card.Body>
+      </Card>
+      
+      <Card style={{ width: '25.5rem' }} border="danger" bg="ligth">
+          <Card.Img variant="top" src={logo} />
+          <Card.Body> 
+          <Card.Title>Donut de chispitas</Card.Title>
+          <Card.Text>
+            Las mas deliciosas donuts con chispitas de dulce
+          </Card.Text>
+        <Button variant="danger" onClick={encendido3}>Quiero Una</Button><br/>
+        <h4>Donut de chispitas: {contar3}</h4>
+      </Card.Body>
+      </Card>
+      
+      </CardGroup>
+      <a
+          className="App-link"
+          href="https://wa.me/message/6ATWXQEFE4ILI1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Finalizar pedido
+        </a>
+      </div>
+      
+      
     </div>
   );
 }
