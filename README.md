@@ -2,7 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![donu](https://user-images.githubusercontent.com/58754599/121608751-28f36e00-ca18-11eb-8348-fb9934cf14d9.png)
+![Donuts](https://user-images.githubusercontent.com/58754599/139619539-f3b0c979-2042-4926-a11a-3c3226eb7b3e.PNG)
+
 
 
 ## Available Scripts
