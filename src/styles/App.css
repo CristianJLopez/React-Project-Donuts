@@ -19,21 +19,21 @@
 }
 
 .App-header {
-  background-color: #080808;
+  background-color: #e7b1b1;
   min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(212, 169, 205);
+  color: rgb(161, 34, 140);
 }
 .App-header p{
   font-size: 2em;
   font-family: 'Hanalei Fill', cursive;
 }
 .App-link {
-  color: #0df046;
+  color: #c21711;
 }
 
 @keyframes App-logo-spin {
@@ -43,8 +43,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-.titulo{
-  color: aqua;
-  background-color:rgba(252, 252, 0, 0.884);
 }
